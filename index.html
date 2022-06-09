@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <title>Team11 - BuckFly</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h2>BuckFly</h2>
+        <ul>
+          <li>
+            <a href="#overview_pos">
+              <span class="material-icons">task</span
+              ><span class="sidebar-text">Overview</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#methods_pos">
+              <span class="material-icons">developer_board</span
+              ><span class="sidebar-text">Research</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#design_pos"
+              ><span class="material-icons">brush</span
+              ><span class="sidebar-text">Design Process</span></a
+            >
+          </li>
+
+          <li>
+            <a href="#sol_pos"
+              ><span class="material-icons">check_box</span
+              ><span class="sidebar-text">Solution</span></a
+            >
+          </li>
+
+          <li>
+            <a href="#reflection_pos"
+              ><span class="material-icons">analytics</span
+              ><span class="sidebar-text">Reflection</span></a
+            >
+          </li>
+
+          <li>
+            <a href="#ac_pos"
+              ><span class="material-icons">face</span
+              ><span class="sidebar-text">Acknowledgements</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="content container">
+        <section id="overview">
+          <h1 class="title" id="overview_pos">OVERVIEW</h1>
+          <div id="overview-content">
+            <p>
+              During a trip, a group of people often have the need of splitting
+              bills with others. Our project’s current problem is: How can we
+              split bills effectively and accurately, and how can we make our
+              application track user’s every payment in detail to help them
+              better control their total expense?
+              Our group is going to design a spilt bill application, BuckFly.
+              The main function of BuckFly is helping people calculate bills automatically,
+              giving itemized information and the amount each person needs to pay or receive.
+            </p>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+              <div class="col">
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="images/task1.png"
+                    class="card-img-top"
+                    alt="overview image 1, woman working on laptop"
+                  />
+                  <div class="card-body">
+                    Unfair bill sharing.
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="images/task2.png"
+                    class="card-img-top"
+                    alt="overview image 2, a graphic of a stopwatch"
+                  />
+                  <div class="card-body">
+                    Happy trip with friends.
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="images/task3.png"
+                    class="card-img-top"
+                    alt="overview image 3, a card labelled BREAK TIME! on a computer keyboard"
+                  />
+                  <div class="card-body">
+                    Handle everything alone is frustrating.
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="images/task4.png"
+                    class="card-img-top"
+                    alt="overview image 4, a graphic showing the procrastination cycle"
+                  />
+                  <div class="card-body">
+                    Always busy when paying bills.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="research">
+          <h1 class="title" id="methods_pos">RESEARCH METHODS</h1>
+          <hr />
+          <div id="research-content">
+            <div class="heading">
+              <h2>Reserach Goal</h2>
+            </div>
+            The objectives of our investigation:
+            <ul>
+              <li>
+                What people are the potential groups who need to share expense?
+              </li>
+              <li>
+                How people split their bills with others?
+              </li>
+              <li>
+                What is the inconvenience of the existing split billing scheme?
+              </li>
+            </ul>
+
+            <hr />
+            <div class="heading">
+              <h3>Competitive Analysis</h3>
+            </div>
+            <div id="comp-analysis-content">
+              <p>
+                We looked into six different bill splitting applications as
+                our potential competitors of the problem statement. These
+                applications have different focus on the bill splitting, some
+                of them focus more on dining out and some of them integrated
+                within the banking system. We analyzed the pros and cons for
+                each competitor.
+              </p>
+              <div class="card mb-3" style="max-width: 80vw">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <a href="https://www.splitwise.com/">
+                      <img
+                        class="card-img-top"
+                        src="images/competitor1.png"
+                        alt="competitor analysis app 1: Splitwise"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Splitwise</h5>
+                      <p class="card-text">
+                        SplitWise is a tool for people to record bills and shared expenses with
+                        housemates, friends, and family...
+                        It is not a banking application, and it provides a lot of features
+                        for splitting expenses.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 80vw">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <a href="https://settleup.io/">
+                      <img
+                        class="card-img-top"
+                        src="images/competitor2.png"
+                        alt="competitor analysis app 2: Settle Up"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Settle Up</h5>
+                      <p class="card-text">
+                        Settle Up keeps track of your personal or group expenses.
+                        It is designed for travelers, roommates, family members, etc.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 80vw">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <a href="https://venmo.com/">
+                      <img
+                        class="card-img-top"
+                        src="images/competitor3.png"
+                        alt="competitor analysis app 3: Venmo"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Venmo</h5>
+                      <p class="card-text">
+                        Venmo is an application for users to not only request or
+                        receive payments from others but also do some investments,
+                        such as buying bitcoin on the market. Venmo also has more
+                        sense of social media and provides a lot of related features.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 80vw">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <a href="https://www.zellepay.com/">
+                      <img
+                        class="card-img-top"
+                        src="images/competitor4.png"
+                        alt="competitor analysis app 4: Zelle"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Zelle</h5>
+                      <p class="card-text">
+                        Zelle functions more like a built-in service in your bank
+                        application instead of an individual application.
+                        Zelle is easy to use, fast, and probably the most popular
+                        way to split the money with your friends as it has been
+                        embedded into almost bank applications available in the US.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 80vw">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <a href="https://www.tabapp.co/">
+                      <img
+                              class="card-img-top"
+                              src="images/competitor5.png"
+                              alt="competitor analysis app 3: Tab"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Tab</h5>
+                      <p class="card-text">
+                        Tab is a bill splitting application, the main functionality is splitting
+                        bills between friends. Users can take a picture of the receipt,
+                        then tap and claim the item they bought or ordered.
+                        The application would calculate the tax and tip for the users.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 80vw">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <a href="https://plates.splitwise.com/">
+                      <img
+                        class="card-img-top"
+                        src="images/competitor6.png"
+                        alt="competitor analysis app 6: Plates by Splitwise"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Plates by Splitwise</h5>
+                      <p class="card-text">
+                        Plates is an application designed especially for dining out,
+                        but available only on the Apple store. It supports the split
+                        with up to 10 people. Users need to enter the price of each dish,
+                        drag their own item to their plates, and then split the shared items.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            <hr />
+            <div class="heading">
+              <h2>Interviews & Insights</h2>
+            </div>
+
+              Each member of our team conducted three one-on-one interviews and
+              finished nine interviews in total. Each interview took around 30
+              minutes to complete. Our primary goal from these interviews was to
+              understand whether our participants have the need of bill splitting
+              with others, the problem they met during the bill splitting and whether
+              they used any software or application to help them with their bill.
+              Once we had finished our interviews, we had several team meetings to
+              assemble an affinity diagram and analyze our findings. We highlighted
+              important information from each interview and found three insights.
+
+            <br /><br />
+
+            <img
+                    class="img-fluid"
+                    src="images/affinity.png"
+                    alt="affinity diagram of user research"
+            />
+
+            <br /><br />
+
+
+            <p>
+              <strong
+              >1. People don't like to spend too much time to entering bills into their
+                smartphone.</strong
+              >
+              <br />
+              People who are under 40 with active bill-splitting needs usually
+              use digital note-keeping tools to maintain bill records. But they
+              usually feel it tedious if it takes them more than 30 seconds to
+              create a new transaction every time, let alone a lot of typing work
+              required. The interviewees we have constantly mentioned they wish there
+              is a way to note bills quickly and without taking too much effort.
+            </p>
+            <p>
+              <strong
+              >2. Managing bills alone for large groups is a terrible experience.</strong
+              >
+              <br />
+              It is terrible to manage all bills for one person who was elected and
+              responsible to record and calculate expenses for the group. The elected
+              person might make mistakes or omissions that cause other people’s concerns.
+              Therefore, if everyone in the group can participate in the process of
+              recording and calculating the expenses, everyone is not required to do much
+              and can spread the responsibility evenly among everyone.
+            </p>
+            <p>
+              <strong
+              >3. Reminding others to pay you back is often awkward.
+              </strong>
+              <br />
+              People who pay bills for a group often want reminders in some way
+              to remind the group when some group members fail to pay the bill in
+              a certain period of time. So that the people who pay the bills in
+              advance could get their money back in time.
+            </p>
+            <hr />
+
+            <div class="heading">
+              <h2 id="storyboard_pos">Storyboard</h2>
+            </div>
+
+            <div id="storyboard-content">
+              <img
+                class="img-fluid"
+                src="images/storyboard.png"
+                alt="stodyboard of user research"
+              />
+
+              <br /><br />
+              We created a Storyboard that a group of people go out to travel.
+              One of the group members choose the rental car for the group, and
+              used his own credit card to pay the rental fee for the whole group.
+              He is really unhappy when spending this large amount of money and
+              other group members haven't paid him back.
+
+              <br />
+
+
+            </div>
+
+            <hr />
+            <div class="heading">
+              <h2>Persona</h2>
+            </div>
+            <div id="personas-content">
+              <div class="row d-flex justify-content-center">
+                <img
+                  class="p-2"
+                  style="width: 75vw"
+                  src="images/persona.png"
+                  alt="persona of Jane, a young professional lives in Irvine"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        </section> <br> <br> <br>
+
+
+        <section id="design">
+          <h1 class="title" id="design_pos">DESIGN PROCESS</h1>
+          <hr />
+          <div id="design-content">
+            <p>
+              We first brainstormed to simulate different workflows based on the insights and user stories we concluded previously. 
+              Then discussed the wireframes we needed and create the prototype on Figma.
+              After that, we applied Nielsen’s 10 Heuristics rules to analyze our prototype, which allowed us to discover and evaluate potential usability issues.
+            </p>
+            <br />
+            <div class="heading"><h2>Our Product Prototype</h2></div>
+            <p> 
+              You can click the image below to view the prototype in our Figma workspace. <br> <strong>Don't Wait, Try it out! :)</strong>
+            </p>
+            <a
+              href="https://www.figma.com/file/k3OWWAE1TEgS0Mu9HtYkUe/swe263p?node-id=0%3A1"
+            >
+              <img
+                class="img-fluid"
+                src="images/prototype-v1.jpg"
+                alt="Overview of low fidelity wireframes on Figma"
+            /></a>
+            <br /><br />
+
+
+            <p>
+              In our design, every bill is associated with a specific group.
+              More specifically, red means you owe others money and green means the opposite. 
+              And Blue means the other status or a settleup among a group.
+              To let users view the status more efficiently,
+              we used high-fidelity colors(Red, Green Blue) to denote different status of the entity.  
+              In our prototype, we have the following features:
+            </p>
+            <ol>
+              <li>
+                Register a new account; sign in via email and password or a existing third-party account.
+              </li>
+              <li>
+                Group page. View the groups users have; create or join a group.
+              </li>
+              <li>
+                Transaction page. View the transactions of current group. Create or settleup transactions.
+              </li>
+              <li>
+                Bill history page. View all transactions based on the timeline.
+              </li>
+              <li>
+                Notification page. View all pay requests and auto-reminders based on the timeline.
+              </li>
+              <li>
+                Setting page. Profile editing; view usage policies; log out.
+              </li>
+            </ol>
+
+            <div class="heading"><h2>Evaluations</h2></div>
+            <p>
+              At this stage, we individually study the idea of 
+              <a
+                href="https://www.nngroup.com/articles/ten-usability-heuristics/"
+                >Jakob Nielsen's 10 general principles for interaction design</a
+              >
+              . Then we walked through the features above with the rules and sought usability issues for the prototype.
+              We tried to evaluate them using the scale from 0 to 5 and found the most important usability issues.
+              Here is the result chart.
+            </p>
+            <img
+              class="p-3 img-fluid"
+              src="images/buckfly-eval.png"
+              alt="Chart of usability evaluation results of BuckFly"
+            />
+            <div class="heading"><h2>5-Minute Demo</h2></div>
+            <!-- <a
+              href="https://www.figma.com/file/SelSPoeWymERVirhi4csAb/263P-Wireframes?node-id=223%3A0"
+            >
+              <img
+                class="img-fluid"
+                src="images/final-prototype.png"
+                alt="Overview of final prototype on Figma"
+            /></a>
+            <br /><br />
+            <div style="text-align: center">
+              You can click on the images to check out the annotations on the
+              wireframe and prototype to see what changes we had to make to fix
+              the issues we found!
+            </div>
+            <br /><br /><br /> -->
+            
+            <div style="text-align: center">
+              <iframe width="853" height="505"
+              src="https://www.youtube-nocookie.com/embed/p1xb2kfIHpw?start=1" 
+              title="YouTube video player" 
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+              <br /><br />
+              Checkout our project video! ☝️
+            </div>
+          </div>
+        </section>
+
+        <section id="solution">
+          <h1 class="title" id="sol_pos">SOLUTION</h1>
+          <hr />
+          <div class="solution-content d-flex flex-column">
+            <p class="">
+              After diving deep into user researches, prototype discussions and usability evaluating with tremendous efforts,
+              we insisted on the highest standard to reach our design goal:
+              <strong> Making bill-splitting more effectively and accurately.</strong>
+              Here are some walk through that shows our answers of "How-to".
+            </p>
+
+            <div class="sol_detail">
+              <div class="sol_image">
+                <img
+                  class="sol_image_mini"
+                  src="images/buckfly-create-group.png"
+                  alt="create"
+                />
+                <img
+                  class="sol_image_mini"
+                  src="images/buckfly-join-group.png"
+                  alt="join"
+                />
+              </div>
+              <p>
+                Our App requires users to be the group member before sending or receiving pay requests.
+              </p>
+            </div>
+            <div class="sol_detail">
+              <div class="sol_image">
+                <img
+                  class="sol_image_mini"
+                  src="images/settleup.png"
+                  alt=""
+                  width="400"
+                  height="500"
+                />
+                <img
+                  class="sol_image_mini"
+                  src="images/aftersettleup.png"
+                  alt=""
+                />
+                <img
+                class="sol_image_mini"
+                src="images/scanbill.png"
+                alt=""
+              />
+              </div>
+              <p>
+                Our App let users settle up transaction easily.
+                 Users can scan the bill to create a new transaction automatically.
+              </p>
+            </div>
+            <div class="sol_detail">
+              <div class="sol_image">
+                <img
+                  class="sol_image_mini"
+                  src="images/autoreminders.png"
+                  alt=""
+                />
+              </div>
+              <p>
+                Our App will help send pay request reminders periodically.
+              </p>
+            </div>
+
+          <br />
+          </div>
+        </section>
+
+        <section id="reflection">
+          <h1 class="title" id="reflection_pos">REFLECTION</h1>
+          <hr />
+
+          As a team, we worked well together for every milestone and design
+          process. We took advantages of teammate's idea during researches and
+          read other teammate's report to help us perform better in the next
+          step. We encouraged each other when met difficulties such as narrowing
+          down interview questions and consolidating insights. We are proud
+          of our work and achievement in these 11 weeks. We are also grateful
+          to Professor Matt and TAs who help us learn this much.
+
+          <div id="reflection-content"></div>
+        </section>
+        <section id="acknowledgements">
+          <h2 class="title" id="ac_pos">ACKNOWLEDGEMENTS</h2>
+          <hr />
+
+          <div id="ac-content">
+            <h3 style="text-align: center">
+              Huge thanks to Professor Matt, TA Ethan Vu, and TA Yang Yue!
+              <br />
+              We could not have this UX design project done without your help
+              throughout this quarter.
+            </h3>
+            <br />
+            <p>
+              Can Wang: I am very thankful to Professor Matt and TAs for helping
+              me so much in this quarter. I also want to say I really appreciate my
+              teammates, Ruokun and Xinnan. Ruokun is a great teammate. He always
+              takes leads on the milestones and discussions of the assignments. He would
+              make appointments with TA in advance for our group, allowing us to have
+              enough time meeting and ask questions with TAs. Xinnan is an excellent
+              teammate, who always comes up with great ideas and pushing us to finish
+              the milestones as early as possible.
+
+            </p>
+            <br />
+            <p>
+              Ruokun Xu: I am grateful to Professor Matt for his teaching this quarter.
+              At the beginning of the course, I had some doubts about Prof.Matt's requirements because
+              I feel individual creativity is limited by those requirements. But with Prof. Matt's guidance,
+              I understood the meaning of the design requirements and logic that Prof.Matt
+              wanted us to understand. Some things are not as naive as I thought. Prof.Matt
+              taught me that a scientific design flow helps us blueprint superior user experiences.
+            </p>
+            <br />
+            <p>
+              Xinnan Wu: I really want to say thank you to Professor Matt, TA Ethan
+              and Yang for the supports and guidance you gave to me and our team this
+              quarter. I still remembered in the first lecture I did not what Figma
+              is when other classmates were discussing this UX design tool. But after
+              one quarter's lecture and projects, I am able to getting a peek of what
+              UX designers are doing in the real world and the tools they use for design
+              and analysis. Thank you for making the knowledge easy to understand and
+              accessible to us.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
